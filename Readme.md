@@ -15,9 +15,9 @@ Once we have the methodology, we need to write a demo to test it quantitatively.
 
 For a quick start, you can merely alter file path whenever you want to test the dataset (commonly in csv or txt format)  and set your desired cluster number, then click 'run'. 
 
-You can test acceleration algorithm with GPU in two .ipynb file, but make sure you do have CUDA in your computer.
+You can test acceleration algorithm with GPU in final_hmz_new.ipynb, but make sure you do have CUDA in your computer. Also, you need to check compute capability of your GPU.
 
-Moreover, I design a simple GUI. However, apparently it is a naïve one. For those who want to develop the algorithm into a software, you can try to put more effort on it.
+Moreover, I design a simple GUI. However, it is a naïve one. For those who want to embedd the algorithm into a software, you can try to put more effort on it.
 
 ## Something else I want to say
 
