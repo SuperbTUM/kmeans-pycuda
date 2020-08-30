@@ -13,11 +13,13 @@ Once we have the methodology, we need to write a demo to test it quantitatively.
 
 ## Quick start
 
-For a quick start, you can merely alter file path whenever you want to test the dataset (commonly in csv or txt format)  and set your desired cluster number, then click 'run'. 
-
-You can test acceleration algorithm with GPU in final_hmz_new.ipynb, but make sure you do have CUDA in your computer. Also, you need to check compute capability of your GPU and determine maximum threads in your stream processor.
+Before the quick start, make sure you do have CUDA in your computer. Use the command `cat /usr/local/cuda/version.txt` to check CUDA version. Read the Docs of your GPU to determine the maximum threads in your SP. In my case, the number of maximum threads per block is 1024. But generally this number would be 512. For a quick start, you can merely alter the file path in final_v1.0.ipynb whenever you want to test the dataset (commonly in csv or txt format) and set your desired cluster number, then click 'run'. 
 
 Moreover, I design a simple GUI. However, it is a naïve one. For those who want to embedd the algorithm into a software, you can try to put more effort on it.
+
+## Next Step
+
+I intend to employ a global discriminator to reduce calculation amount, but this has been stopped in the aspect of CPU. The reason why I couldn't integrate this into GPU acceleration is that I should use sparse matrix for distance calculation. Then cuBLAS needs to be replaced by cuSPARSE. Unluckily, I couldn't install pyculib successfully though I had the idea of how to use cuSPARSE to make the acceleration algorithm into the next level. I had a demo about level-3 function usage uploaded and you could use that to test whether cuSPARSE is functioning normally.
 
 ## Something else I want to say
 
