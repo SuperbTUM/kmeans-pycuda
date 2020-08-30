@@ -19,7 +19,7 @@ Moreover, I design a simple GUI. However, it is a naïve one. For those who want
 
 ## Next Step
 
-I intend to employ a global discriminator to reduce calculation amount, but this has been stopped in the aspect of CPU. The reason why I couldn't integrate this into GPU acceleration is that I should use sparse matrix for distance calculation. Then cuBLAS needs to be replaced by cuSPARSE. Unluckily, I couldn't install pyculib successfully though I had the idea of how to use cuSPARSE to make the acceleration algorithm into the next level. I had a demo about level-3 function usage uploaded and you could use that to test whether cuSPARSE is functioning normally.
+I intend to employ a global discriminator to reduce calculation amount, but this has been stopped in the aspect of CPU. The reason why I couldn't integrate this into GPU acceleration is that I should use sparse matrix for distance calculation. Then cuBLAS needs to be replaced by cuSPARSE. Unluckily, I couldn't install pyculib successfully though I had the idea of how to use cuSPARSE to make the acceleration algorithm into the next level. I am faced with the following attribute error: `undefined symbol: cusparseCaxpyi_v2`. I had a demo about level-3 function usage uploaded and you could use that to test whether cuSPARSE is functioning normally.
 
 ## Something else I want to say
 
@@ -27,4 +27,4 @@ For us Chinese learners, if we are asked to write some code, we are likely to tu
 
 ## Further information
 
-If you would like to know more detail about the structure of the algorithm or if you have any other question, feel free to leave a comment or contact me via e-mail: hmz.superb@gmail.com
+If you would like to know more detail about the structure of the algorithm or if you have any other question, feel free to leave a comment or contact me via e-mail: hmz.superb@gmail.com. My WeChat account is DrSuperb.
