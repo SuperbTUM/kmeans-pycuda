@@ -1,3 +1,6 @@
+## Update Log
+Sep 6, 2020  Optimization on reduction algorithm
+
 ## Introduction
 
 This is my graduation project. The goal of this individual work is to design and implement a general acceleration algorithm for k-means clustering with the assistance of GPU. I'd like to name it as hybrid method. Frankly speaking, it is a kind of algorithm that integrates all possible acceleration modules that I can think of, including PCA as dataset pretreatment. To test the algorithm, I set traditional k-means algorithm (Lloyd, 1982) as well as triangle inequality algorithm (Elkan, 2006) as references. I leveraged Adjust Rand Index and Adjust Normalization Index as accuracy functions and linear speedup as algorithm speed evaluation function.
