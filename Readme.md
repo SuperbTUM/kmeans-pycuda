@@ -1,4 +1,5 @@
 ## Update Log
+Sep 7, 2020  Minor optimization on dis_computation function
 Sep 6, 2020  Optimization on reduction algorithm
 
 ## Introduction
