@@ -1,4 +1,6 @@
 ## Update Log
+Feb 13, 2021 Confused by implementation in sklearn, since it's incredibly fast while maintaining high accuracy.
+
 Sep 7, 2020  Minor optimization on dis_computation function
 
 Sep 6, 2020  Optimization on reduction algorithm
