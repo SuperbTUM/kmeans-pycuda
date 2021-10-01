@@ -36,4 +36,4 @@ For us Chinese learners, if we are asked to write some code, we are likely to tu
 
 ## Further information
 
-If you would like to know more detail about the structure of the algorithm or if you have any other question, feel free to leave a comment or contact me via e-mail: mingzhe.hu@columbia.com.
+If you would like to know more detail about the structure of the algorithm or if you have any other question, feel free to leave a comment or contact me via e-mail: mingzhe.hu@columbia.edu
