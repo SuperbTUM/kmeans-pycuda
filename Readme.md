@@ -9,7 +9,7 @@ Sep 6, 2020  Optimization on reduction algorithm
 
 ## Introduction
 
-This is my graduation project. The goal of this individual work is to design and implement a general acceleration algorithm for k-means clustering with the assistance of GPU. The work is a algorithm that integrates global discriminator, cuBLAS matrix multiplication, ThrsutRTC, and basic feature engineering (PCA). To test the algorithm, I set traditional k-means algorithm (Lloyd, 1982) as well as [triangle inequality algorithm](https://www.aaai.org/Papers/ICML/2003/ICML03-022.pdf) (Elkan, 2006) as references. I leveraged Adjust Rand Index and Adjust Normalization Index as target functions and linear speedup as speed evaluation function.
+This is my graduation project. The goal of this individual work is to design and implement a general acceleration algorithm for k-means clustering with the assistance of GPU. The work is an algorithm that integrates global discriminator, cuBLAS matrix multiplication, ThrsutRTC, and basic feature engineering (PCA). To test the algorithm, I set traditional k-means algorithm (Lloyd, 1982) as well as [triangle inequality algorithm](https://www.aaai.org/Papers/ICML/2003/ICML03-022.pdf) (Elkan, 2006) as references. I leveraged Adjust Rand Index and Adjust Normalization Index as target functions and linear speedup as speed evaluation function.
 
 Once we have the methodology, we need to write a demo to test it quantitatively. The following table shows basic information of the dataset for experiment. The URL for dataset download is: https://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
 
