@@ -1,5 +1,5 @@
 ## Update Log
-Sep 30, 2021 Code review, two issues: index assignment in kernel function (could use more than one dimension threads); avoid explicit memory allocation to device.
+Oct 2, 2021 Code review, v1.1 released, with 100% speed up. The square of datapoints should be calculated for only once! 
 
 Feb 13, 2021 Confused by implementation in sklearn, since it's incredibly fast while maintaining high accuracy.
 
@@ -9,7 +9,7 @@ Sep 6, 2020  Optimization on reduction algorithm
 
 ## Introduction
 
-This is my graduation project. The goal of this individual work is to design and implement a general acceleration algorithm for k-means clustering with the assistance of GPU. I'd like to name it as hybrid method. Frankly speaking, it is a kind of algorithm that integrates all possible acceleration modules that I can think of, including PCA as dataset pretreatment. To test the algorithm, I set traditional k-means algorithm (Lloyd, 1982) as well as triangle inequality algorithm (Elkan, 2006) as references. I leveraged Adjust Rand Index and Adjust Normalization Index as accuracy functions and linear speedup as algorithm speed evaluation function.
+This is my graduation project. The goal of this individual work is to design and implement a general acceleration algorithm for k-means clustering with the assistance of GPU. The work is a algorithm that integrates global discriminator, cuBLAS matrix multiplication, ThrsutRTC, and basic feature engineering (PCA). To test the algorithm, I set traditional k-means algorithm (Lloyd, 1982) as well as [triangle inequality algorithm](https://www.aaai.org/Papers/ICML/2003/ICML03-022.pdf) (Elkan, 2006) as references. I leveraged Adjust Rand Index and Adjust Normalization Index as target functions and linear speedup as speed evaluation function.
 
 Once we have the methodology, we need to write a demo to test it quantitatively. The following table shows basic information of the dataset for experiment. The URL for dataset download is: https://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
 
@@ -22,9 +22,9 @@ Once we have the methodology, we need to write a demo to test it quantitatively.
 
 ## Quick start
 
-Before the quick start, make sure you do have CUDA in your computer. Use the command `cat /usr/local/cuda/version.txt` to check CUDA version. Read the Docs of your GPU to determine the maximum threads in your SP. In my case, the number of maximum threads per block is 1024. But generally this number would be 512. For a quick start, you can merely alter the file path in final_v1.0.ipynb whenever you want to test the dataset (commonly in csv or txt format) and set your desired cluster number, then click 'run'. 
+Before the quick start, make sure you do have CUDA in your computer. Use the command `cat /usr/local/cuda/version.txt` to check CUDA version. Read the Docs of your GPU to determine the maximum threads in your SP. In my case, the number of maximum threads per block is 1024. But generally this number would be 512. For a quick start, you can merely alter the file path in `kmeans_v1_1.ipynb` whenever you want to test the dataset (commonly in csv or txt format) and set your desired cluster number, then click 'run'. 
 
-Moreover, I design a simple GUI. However, it is a naïve one. For those who want to embedd the algorithm into a software, you can try to put more effort on it.
+Moreover, I design a simple GUI. However, it is a naïve one. For those who want to embedd the algorithm into a software, you can try to put more effort in it.
 
 ## Next Step
 
