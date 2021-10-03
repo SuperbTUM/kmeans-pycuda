@@ -7,5 +7,6 @@ pandas
 random
 time
 collections
-cuda
+pycuda
 tkinter
+scikit-cuda
