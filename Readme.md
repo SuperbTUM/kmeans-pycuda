@@ -1,5 +1,5 @@
 ## Update Log
-Oct 2, 2021 Code review, v1.1 released, with 100% speed up. The square of datapoints should be calculated for only once! 
+Oct 6, 2021 Code review, v1.2 released, with more than 100% speed up (16 seconds -> 6.5 seconds). I managed to reduce memeory transfer frequency. The square of datapoints should be calculated for only once! 
 
 Feb 13, 2021 Confused by implementation in sklearn, since it's incredibly fast while maintaining high accuracy.
 
@@ -22,7 +22,7 @@ Once we have the methodology, we need to write a demo to test it quantitatively.
 
 ## Quick start
 
-Before the quick start, make sure you do have CUDA in your computer. Use the command `cat /usr/local/cuda/version.txt` to check CUDA version. Read the Docs of your GPU to determine the maximum threads in your SP. In my case, the number of maximum threads per block is 1024. But generally this number would be 512. For a quick start, you can merely alter the file path in `kmeans_v1_1.ipynb` whenever you want to test the dataset (commonly in csv or txt format) and set your desired cluster number, then click 'run'. 
+Before the quick start, make sure you do have CUDA in your computer. Use the command `cat /usr/local/cuda/version.txt` to check CUDA version. Read the Docs of your GPU to determine the maximum threads in your SP. In my case, the number of maximum threads per block is 1024. But generally this number would be 512. For a quick start, you can merely alter the file path in `kmeans_v1_2.ipynb` whenever you want to test the dataset (commonly in csv or txt format) and set your desired cluster number, then click 'run'. 
 
 Moreover, I design a simple GUI. However, it is a naïve one. For those who want to embedd the algorithm into a software, you can try to put more effort in it.
 
