@@ -1,5 +1,5 @@
 ## Update Log
-Oct 6, 2021 Code review, v1.2 released, with more than 100% speed up (16 seconds -> 6.5 seconds). I managed to reduce memeory transfer frequency. The square of datapoints should be calculated for only once! 
+Oct 7, 2021 Code review, v1.2 released, with more than 100% speed up (16s -> less than 6s). I managed to reduce memeory transfer frequency. The square of datapoints should be calculated for only once! 
 
 Feb 13, 2021 Confused by implementation in sklearn, since it's incredibly fast while maintaining high accuracy.
 
