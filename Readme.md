@@ -1,4 +1,9 @@
+**Archive Only At Present**
+
 ## Update Log
+
+Oct 11, 2021 I found out I made a huge mistake! I didn't use synchronized method in each kernel, and that led to a tremendous collapse in evaluation indexes! Though there are a lot to do next, I decide to archive this repository for a while because I have to complete my master's degree.
+
 Oct 7, 2021 Code review, v1.2 released, with more than 100% speed up (16s -> less than 6s). I managed to reduce memeory transfer frequency. The square of datapoints should be calculated for only once! 
 
 Feb 13, 2021 Confused by implementation in sklearn, since it's incredibly fast while maintaining high accuracy.
